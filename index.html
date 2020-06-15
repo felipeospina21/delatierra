@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Developer Design Portfolio">
+  <meta name="keywords" content="HTML,CSS,JavaScript,Python,Django,React,Node">
+  <meta name="author" content="Felipe Ospina C.">
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Home</title>
+</head>
+<body>
+<header>
+  <div class="nav-bar">
+    <div class="nav-bar-img">
+      <img src="/images/logo.png" alt="" srcset="">
+    </div>
+    <div class="nav-bar-menu">
+      <a href="#">Historia</a>
+      <a href="#">Productos</a>
+      <a href="#">Contacto</a>
+    </div>
+  </div>
+</header>
+<main>
+<!-- Slideshow container -->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="/images/carrot.jpg" style="width:100%">
+      <div class="text">Productos Naturales</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/images/lime.jpg" style="width:100%">
+      <div class="text">Sin conservantes</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/images/berries.jpg" style="width:100%">
+      <div class="text">Artesanales</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <div class="about-us">
+    <!-- Historia -->
+    <h3>Nuestra Historia</h3>
+    <p>Somo una marca consciente decidida a crear productos naturales y de calidad. Nacimos como una propuesta
+      diferente para brindar todos los beneficios de la alimentación saludable y el bienestar. Queremos
+      ser una alternativa deliciosa y saludable.</p>
+  </div>
+  <div class="products-container">
+    <div class="card">
+      <a href="#"><img src="/images/img1.jpg" class="card__img"></a>
+      <div class="card__text"> 
+        <h3 class="card__title">Ghee</h3>
+        <p class="card__body">Algunas descripción básica del Ghee.</p>
+        <p class="card__body">Presentación: 250g y 500g.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="#"><img src="/images/img8.jpg" class="card__img"></a>
+      <div class="card__text"> 
+        <h3 class="card__title">Crema De Marañon</h3>
+        <p class="card__body">Algunas descripción básica de la Crema de Marañones.</p>
+        <p class="card__body">Presentación: 250g y 500g.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="#"><img src="/images/img6.jpg" class="card__img"></a>
+      <div class="card__text"> 
+        <h3 class="card__title">Crema De Coco</h3>
+        <p class="card__body">Algunas descripción básica de la Crema de Coco.</p>
+        <p class="card__body">Presentación: 250g y 500g.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="#"><img src="/images/img7.jpg" class="card__img"></a>
+      <div class="card__text"> 
+        <h3 class="card__title">Crema De Almendras</h3>
+        <p class="card__body">Algunas descripción básica de la Crema de Almendras.</p>
+        <p class="card__body">Presentación: 250g y 500g.</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <!-- contacto -->
+  </div>
+</main>
+<footer>
+  <div class="footer">
+    <div class="social-logos">
+      <a href="#"><i class="far fa-envelope fa-5x"></i></a>
+      <a href="#"><i class="fab fa-facebook-square fa-5x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-5x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-5x"></i></a>
+    </div>
+    <div id="created-by">Creado por Felipe Ospina</div>
+  </div>  
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
