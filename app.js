@@ -30,3 +30,11 @@ function showSlides(n) {
 	slides[slideIndex - 1].style.display = 'block';
 	dots[slideIndex - 1].className += ' active';
 }
+
+// Toggle button nav-bar
+const toggleBtn = document.querySelector('.nav-toggle');
+const links = document.querySelector('.links');
+
+toggleBtn.addEventListener('click', () => {
+	links.classList.toggle('show-links');
+});
