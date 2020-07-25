@@ -25,14 +25,14 @@
     </div>
       <!-- links -->
       <ul class="links">
-        <li>
+        <!-- <li>
           <a href="index.html">Home</a>
-        </li>
+        </li> -->
         <li>
           <a href="historia.html">Historia</a>
         </li>
         <li>
-          <a href="productos.html">Producto</a>
+          <a href="productos.html">Productos</a>
         </li>
         <li>
           <a href="contacto.html">Contacto</a>
@@ -41,6 +41,13 @@
   </div>
 </header>
 <main>
+
+  <div class="btn-container">
+      <a href="http://api.whatsapp.com/send?phone=543054269112" target="_blank">
+        <img class="whatsapp-logo" src="./images/whatsapp.svg" alt="">
+      </a>
+  </div>
+
 <!-- Slideshow container -->
   <div class="slideshow-container">
     <div class="mySlides fade">
@@ -70,14 +77,18 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
+
+  <!-- Historia -->
   <div class="about-us">
-    <!-- Historia -->
-    <h3>Nuestra Historia</h3>
+    <h3>nuestra historia</h3>
     <p>Somo una marca consciente decidida a crear productos naturales y de calidad. Nacimos como una propuesta
       diferente para brindar todos los beneficios de la alimentación saludable y el bienestar. Queremos
       ser una alternativa deliciosa y saludable.</p>
   </div>
+
+  <!-- Products -->
   <div class="products-container">
+    <h3>nuestros productos</h3>
     <div class="card">
       <a href="#"><img src="/images/img1.jpg" class="card__img"></a>
       <div class="card__text"> 
@@ -97,15 +108,6 @@
     </div>
 
     <div class="card">
-      <a href="#"><img src="/images/img6.jpg" class="card__img"></a>
-      <div class="card__text"> 
-        <h3 class="card__title">Crema De Coco</h3>
-        <p class="card__body">Algunas descripción básica de la Crema de Coco.</p>
-        <p class="card__body">Presentación: 400g y 200g.</p>
-      </div>
-    </div>
-
-    <div class="card">
       <a href="#"><img src="/images/img7.jpg" class="card__img"></a>
       <div class="card__text"> 
         <h3 class="card__title">Crema De Almendras</h3>
@@ -116,17 +118,17 @@
   </div>
   <div>
     <!-- contacto -->
+
   </div>
 </main>
 <footer>
   <div class="footer">
     <div class="social-logos">
-      <a href="#"><i class="far fa-envelope fa-5x"></i></a>
-      <a href="#"><i class="fab fa-facebook-square fa-5x"></i></a>
-      <a href="#"><i class="fab fa-instagram fa-5x"></i></a>
-      <a href="#"><i class="fab fa-twitter fa-5x"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+      <a href="#"><i class="far fa-envelope"></i></a>
     </div>
-    <div id="created-by">Creado por Felipe Ospina</div>
+    <div class="created-by">Creado por Felipe Ospina</div>
   </div>  
 </footer>
 <script src="app.js"></script>
