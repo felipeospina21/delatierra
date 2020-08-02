@@ -270,12 +270,15 @@ a {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
 }
 
 .card {
 	position: relative;
 	margin: 0.5rem 0;
 	background: rgba(0, 0, 0, 0.7);
+	max-width: 1250px;
 }
 
 .card::before,
@@ -551,6 +554,10 @@ fieldset {
 	}
 	.mySlides img {
 		height: 14rem;
+	}
+
+	.card {
+		margin: 0.5rem 0.3rem;
 	}
 }
 
