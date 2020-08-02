@@ -1,0 +1,22 @@
+{
+  "name": "delatierra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipeospina21/delatierra.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipeospina21/delatierra/issues"
+  },
+  "homepage": "https://felipeospina21.github.io/delatierra",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
