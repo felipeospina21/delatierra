@@ -187,9 +187,9 @@ a {
 }
 
 .background1 {
-	position: relative;
+	/* position: relative; */
 	background-image: url(images/2.jpeg);
-	background-position: 0 -20;
+	/* background-position: 0 -20; */
 }
 
 .background2 {
