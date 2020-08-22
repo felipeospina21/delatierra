@@ -55,10 +55,14 @@ dropContainers.forEach(dropContainer => {
 			dropContainers.forEach(element => {
 				if (element !== dropContainer) {
 					element.classList.remove('show-text');
+
+					const btn = element.children.item(0).children.item(1);
+					btn.classList.remove('rotate');
 				}
 			});
 
 			dropContainer.classList.toggle('show-text');
+			dropBtn.classList.toggle('rotate');
 		});
 	});
 });

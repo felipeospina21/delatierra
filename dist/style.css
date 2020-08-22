@@ -478,17 +478,29 @@ a {
 	align-items: center;
 	margin: 1.2rem 0;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.drop-title h4{
 	font-weight: 400;
 }
 
 .drop-btn {
 	font-size: 1.5rem;
+
+	/* font-size: 1rem;
+	width: 100%;
+	display: flex; */
+
 	background: transparent;
 	border-color: transparent;
 	cursor: pointer;
 	color: var(--clr-secondary);
 	margin-right: 1.5rem;
-	/* transition: var(--transition); */
+	transition: all 0.3s ease;
+}
+
+.rotate {
+	transform: rotate(90deg);
 }
 
 .products__text {
@@ -508,6 +520,8 @@ a {
 }
 .show-text .drop-menu {
 	display: block;
+	
+
 }
 /* .products__title {
 	grid-column: 1, 2;
