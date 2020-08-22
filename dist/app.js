@@ -41,3 +41,24 @@ const links = document.querySelector('.links');
 toggleBtn.addEventListener('click', () => {
 	links.classList.toggle('show-links');
 });
+
+// Products page drop-menu
+const dropContainers = document.querySelectorAll('.drop-container');
+
+dropContainers.forEach(dropContainer => {
+	const dropTitles = dropContainer.querySelectorAll('.drop-title');
+
+	dropTitles.forEach(dropTitle => {
+		const dropBtn = dropTitle.querySelector('.drop-btn');
+
+		dropBtn.addEventListener('click', () => {
+			dropContainers.forEach(element => {
+				if (element !== dropContainer) {
+					element.classList.remove('show-text');
+				}
+			});
+
+			dropContainer.classList.toggle('show-text');
+		});
+	});
+});
