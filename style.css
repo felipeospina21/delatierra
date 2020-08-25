@@ -61,7 +61,7 @@ header {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0px;
-	z-index: 10;
+	z-index: 200;
 }
 
 .nav-bar {
@@ -220,7 +220,7 @@ header {
 }
 
 .background3 {
-	background-image: url(images/4.jpg);
+	background-image: url(images/4.jpeg);
 }
 
 .prev,
@@ -354,6 +354,15 @@ header {
 	max-width: 1250px;
 }
 
+.touch-img{
+	position: absolute;
+	top:25;
+	right:25;
+	font-size: 1.2rem;
+	color: rgba(0, 0, 0, 0.7);
+	opacity: 0.3;
+}
+
 .card::before,
 .card::after {
 	content: '';
@@ -380,6 +389,7 @@ header {
 	border-right: 1px solid white;
 	-webkit-transform: scale(1, 0);
 	transform: scale(1, 0);
+	
 }
 
 .card:hover::before {
@@ -390,6 +400,8 @@ header {
 .card:hover::after {
 	-webkit-transform: scale(1, 1.05);
 	transform: scale(1, 1.05);
+	z-index: 10;
+
 }
 
 .card__img {
@@ -411,12 +423,17 @@ header {
 	top: 50%;
 	left: 50%;
 	width: 90%;
+	
+
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	color: white;
 	opacity: 0;
 	-webkit-transition: opacity ease-out 250ms;
 	transition: opacity ease-out 250ms;
+	z-index: 100;
+	text-decoration: none;
+
 }
 
 .card:hover .card__text {
@@ -435,6 +452,13 @@ header {
 	text-align: center;
 	font-size: 0.9rem;
 	line-height: 1.4rem;
+}
+
+.card__body a {
+	color: white;
+	text-decoration: underline;
+	/* position: absolute;
+	bottom: 0; */
 }
 
 /* Footer section */
