@@ -1,5 +1,9 @@
 try {
-	var slideIndex = 1;
+	function getRndInteger(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+	var slideIndex = getRndInteger(1, 3);
 	showSlides(slideIndex);
 
 	// Next/previous controls
@@ -31,8 +35,8 @@ try {
 		slides[slideIndex - 1].style.display = 'block';
 		dots[slideIndex - 1].className += ' active';
 	}
-} catch (error) {
-	console.error(error);
+} catch (e) {
+	e;
 }
 // Toggle button nav-bar
 const toggleBtn = document.querySelector('.nav-toggle');
