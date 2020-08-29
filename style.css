@@ -140,7 +140,7 @@ div {
 	width: 30%;
 	display: flex;
 	align-items: center;
-	margin: 0 auto;
+	margin: 0 0 0 auto;
 }
 
 .nav-toggle {
@@ -151,11 +151,6 @@ div {
 	cursor: pointer;
 	margin: 0.5rem auto 0 auto;
 }
-
-/* .nav-toggle:hover {
-	color: var(--clr-primary);
-
-} */
 
 .logo {
 	display: flex;
@@ -883,12 +878,7 @@ fieldset {
 @media screen and (min-width: 1000px) {
 	.nav-header {
 		flex-wrap: nowrap;
-		/* height: 100%; */
 	}
-	/* .nav-logo {
-		width: 40%;
-		margin: 0;
-	} */
 	.nav-toggle {
 		display: none;
 	}
@@ -915,6 +905,7 @@ fieldset {
 		padding: 0;
 		background: transparent;
 	}
+
 	.mySlides {
 		background-position: 0 -100;
 	}
