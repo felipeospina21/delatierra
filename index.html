@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,162 +12,167 @@
   <link rel="stylesheet" href="style.css">
   <title>Home</title>
 </head>
-<body>
-	<header>
-		<div class="nav-bar">
-			<div class="nav-header">
-				<div class="nav-logo">
-					<a href="index.html">
-						<img src="./images/logoDLT.svg" class="logo" alt="" srcset="">
-					</a>
-				</div>
 
-			<!-- links -->
-			<ul class="links">
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="historia.html">Historia</a>
-				</li>
-				<li>
-					<a href="productos.html">Productos</a>
-				</li>
-				<li>
-					<a href="contacto.html">Contacto</a>
-				</li>
-				<li>
-					<a href="http://api.whatsapp.com/send?phone=573054269112" target="_blank">
-						<i class="fas fa-shopping-cart cart-logo"></i>
-					</a>
-				</li>
-      </ul>
-      
-      <div class="nav-toggle-container">
-        <button class="nav-toggle">
-          <i class="fas fa-bars"></i>
-        </button>
+<body>
+  <header>
+    <div class="nav-bar">
+      <div class="nav-header">
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="./images/logoDLT.svg" class="logo" alt="" srcset="">
+          </a>
+        </div>
+
+        <div class="nav-toggle-container">
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="historia.html">Conócenos</a>
+          </li>
+          <li>
+            <a href="productos.html">Productos</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+          <li>
+            <a href="http://api.whatsapp.com/send?phone=573054269112" target="_blank">
+              <i class="fas fa-shopping-cart cart-logo"></i>
+            </a>
+          </li>
+        </ul>
+
+
       </div>
     </div>
-		</div>
   </header>
-  
-<main>
-<!-- whatsapp Btn -->
-  <div class="btn-container">
+
+  <main>
+    <!-- whatsapp Btn -->
+    <div class="btn-container">
       <a href="http://api.whatsapp.com/send?phone=573054269112" target="_blank">
         <img class="whatsapp-logo" src="./images/whatsapp.svg" alt="">
       </a>
-  </div>
-
-<!-- Slideshow container -->
-  <div class="slideshow-container">
-    
-    <div class="mySlides background1 fade">
-      <div class="text">Natural</div>
     </div>
 
-    <div class="mySlides background2 fade">
-      <div class="text">Sin conservantes</div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <div class="mySlides background1 fade">
+        <div class="text">Natural</div>
+      </div>
+
+      <div class="mySlides background2 fade">
+        <div class="text">Sin conservantes</div>
+      </div>
+
+      <div class="mySlides background3 fade">
+        <div class="text">Artesanal</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
-    <div class="mySlides background3 fade">
-      <div class="text">Artesanal</div>
+    <!-- Historia -->
+    <div class="about-us">
+      <h3>nuestra historia</h3>
+      <p>Nacimos con el objetivo de generar conciencia sobre la importancia del consumo de alimentos puros, naturales y
+        sin aditivos; brindándote opciones de productos nutritivos y deliciosos. Nuestros productos están pensados para
+        ser incluidos en tu alimentación diaria como complemento o snack en cualquier momento del día..</p>
     </div>
 
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
+    <!-- Products -->
+    <div class="products-container-home">
+      <div class="products-container-title">
+        <h3>nuestros productos</h3>
+      </div>
 
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
+      <div class="cards-container">
+        <div class="card" id="card_ghee">
+          <a href="#"><img src="./images/ghee.jpeg" class="card__img"></a>
+          <a href=""><i class="fas fa-plus-circle touch-img"></i></a>
+          <div class="card__text">
+            <h3 class="card__title">Ghee</h3>
+            <p class="card__body">
+              Nuestro Ghee se obtiene de la mantequilla de vaca mediante un
+              proceso de cocción lento, eliminando así la caseina y la lactosa.
+            </p>
+            <p class="card__body">Presentación: 315g y 160g.</p>
+            <p class="card__body"><a href="productos.html">Conoce más</a></p>
+          </div>
+        </div>
 
-  <!-- Historia -->
-  <div class="about-us">
-    <h3>nuestra historia</h3>
-    <p>Nacimos con el objetivo de generar conciencia sobre la importancia del consumo de alimentos puros, naturales y
-      sin aditivos; brindándote opciones de productos nutritivos y deliciosos.</p>
-  </div>
+        <div class="card" id="card_mara">
+          <a href="#"><img src="./images/marañon.jpeg" class="card__img"></a>
+          <i class="fas fa-plus-circle touch-img"></i>
+          <div class="card__text">
+            <h3 class="card__title">Crema De Marañon</h3>
+            <p class="card__body">
+              Nuestra crema de marañon tiene un sabor dulce y una textura perfecta para untar. Se obtiene
+              de marañones 100% cultivados en Colombia.
+            </p>
+            <p class="card__body">Presentación: 400g y 200g.</p>
+            <p class="card__body"><a href="productos.html">Conoce más</a></p>
+          </div>
+        </div>
 
-  <!-- Products -->
-  <div class="products-container-home">
-    <div class="products-container-title">
-      <h3>nuestros productos</h3>
-    </div>
-    
-    <div class="cards-container">
-      <div class="card" id="card_ghee">
-        <a href="#"><img src="./images/ghee.jpeg" class="card__img"></a>
-        <a href=""><i class="fas fa-plus-circle touch-img"></i></a>
-        <div class="card__text"> 
-          <h3 class="card__title">Ghee</h3>
-          <p class="card__body">
-            Nuestro Ghee se obtiene de la mantequilla de vaca mediante un 
-            proceso de cocción lento, eliminando así la caseina y la lactosa. 
-          </p>
-          <p class="card__body">Presentación: 315g y 160g.</p>
-          <p class="card__body"><a href="productos.html">Conoce más</a></p>
+        <div class="card" id="card_almd">
+          <a href="#"><img src="./images/almendra.jpg" class="card__img"></a>
+          <i class="fas fa-plus-circle touch-img"></i>
+          <div class="card__text">
+            <h3 class="card__title">Crema De Almendras</h3>
+            <p class="card__body">
+              Nuestra crema de almendra está endulzada con un poco de stevia, que en conjunto
+              con la sal, le da un contrastse increible a sus sabores.
+            </p>
+            <p class="card__body">Presentación: 400g y 200g.</p>
+            <p class="card__body"><a href="productos.html">Conoce más</a></p>
+          </div>
         </div>
       </div>
 
-      <div class="card" id="card_mara">
-        <a href="#"><img src="./images/marañon.jpeg" class="card__img"></a>
-        <i class="fas fa-plus-circle touch-img"></i>
-        <div class="card__text"> 
-          <h3 class="card__title">Crema De Marañon</h3>
-          <p class="card__body">
-            Nuestra crema de marañon tiene un sabor dulce y una textura perfecta para untar. Se obtiene
-            de marañones 100% cultivados en Colombia.
-          </p>
-          <p class="card__body">Presentación: 400g y 200g.</p>
-          <p class="card__body"><a href="productos.html">Conoce más</a></p>
-        </div>
-      </div>
+    </div>
+    <div>
+      <!-- contacto -->
 
-      <div class="card" id="card_almd">
-        <a href="#"><img src="./images/almendra.jpg" class="card__img"></a>
-        <i class="fas fa-plus-circle touch-img"></i>
-        <div class="card__text"> 
-          <h3 class="card__title">Crema De Almendras</h3>
-          <p class="card__body">
-            Nuestra crema de almendra está endulzada con un poco de stevia, que en conjunto 
-            con la sal, le da un contrastse increible a sus sabores. 
-          </p>
-          <p class="card__body">Presentación: 400g y 200g.</p>
-          <p class="card__body"><a href="productos.html">Conoce más</a></p>
-        </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footer-contact">
+        <p>Medellin, Colombia</p>
+        <p>+(54) 305 4269 112</p>
+      </div>
+      <div class="social-logos">
+        <a href="https://instagram.com/delatierra.tallersaludable?igshid=nnjvfhzgxps1" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://facebook.com/De-La-Tierra-Taller-saludable-100453998403299" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+        </a>
       </div>
     </div>
-    
-  </div>
-  <div>
-    <!-- contacto -->
-
-  </div>
-</main>
-<footer>
-  <div class="footer">
-    <div class="footer-contact">
-      <p>Medellin, Colombia</p>
-      <p>+(54) 305 4269 112</p>
-    </div>
-    <div class="social-logos">
-      <a href="https://instagram.com/delatierra.tallersaludable?igshid=nnjvfhzgxps1" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://facebook.com/De-La-Tierra-Taller-saludable-100453998403299" target="_blank">
-        <i class="fab fa-facebook-square"></i>
-      </a>
-    </div>
-  </div>
-  <div class="created-by">Creado por Felipe Ospina</div>
-</footer>
-<script src="app.js"></script>
+    <div class="created-by">Creado por Felipe Ospina</div>
+  </footer>
+  <script src="app.js"></script>
 </body>
+
 </html>
