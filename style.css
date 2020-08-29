@@ -316,6 +316,7 @@ div {
 	margin: 0.8rem auto;
 	background-color: var(--clr-secondary);
 	color: var(--clr-background);
+	/* max-width: 1800px; */
 }
 
 .about-us p {
@@ -371,12 +372,12 @@ div {
 	display: flex;
 	margin: 2rem auto;
 	width: 90%;
-	height: 60%;
+	height: 20rem;
 	background-image: url("./images/history-img.jpg");
 	background-size: cover;
 	background-position: -200 0;
 	background-repeat: no-repeat;
-	max-width: 1400px;
+	max-width: 1700px;
 }
 /* Products section */
 .products-container-home {
@@ -842,6 +843,7 @@ fieldset {
 	}
 	.history-img {
 		background-position: 0 0;
+		height: 25rem;
 	}
 }
 
@@ -873,6 +875,9 @@ fieldset {
 	}
 	.fa-instagram {
 		font-size: 1.69rem;
+	}
+	.history-img {
+		height: 30rem;
 	}
 }
 @media screen and (min-width: 1000px) {
@@ -966,6 +971,9 @@ fieldset {
 		max-width: 1200px;
 		margin: 0 auto 1rem auto;
 	}
+	.history-img {
+		height: 38rem;
+	}
 }
 
 @media screen and (min-width: 1300px) {
@@ -1055,6 +1063,6 @@ fieldset {
 		transform: scale(1, 0);
 	}
 	.history-img {
-		height: 80%;
+		height: 45rem;
 	}
 }
