@@ -152,6 +152,10 @@ div {
 	margin: 0.5rem auto 0 auto;
 }
 
+.nav-toggle:focus {
+	outline: none;
+}
+
 .logo {
 	display: flex;
 	align-items: center;
