@@ -152,7 +152,8 @@ div {
 	margin: 0.5rem auto 0 auto;
 }
 
-.nav-toggle:focus {
+.nav-toggle:focus,
+.drop-btn:focus {
 	outline: none;
 }
 
