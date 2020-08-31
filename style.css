@@ -212,7 +212,7 @@ div {
 	position: absolute;
 	top: 0;
 	left: 0;
-	opacity: 0.6;
+	opacity: 0.5;
 	z-index: 0;
 }
 
@@ -651,7 +651,7 @@ div {
 }
 
 .description {
-	margin-top: 3rem;
+	margin-top: 2rem;
 }
 
 .drop-btn {
@@ -967,7 +967,7 @@ fieldset {
 	}
 	.about-us p {
 		max-width: 1200px;
-		margin: 0 auto 1rem auto;
+		margin: 1rem auto;
 	}
 	.history-img {
 		height: 38rem;
@@ -980,7 +980,7 @@ fieldset {
 		margin: 1.5rem;
 	}
 	.about-us p {
-		margin: 0 auto 1.5rem auto;
+		margin: 1.5rem auto;
 	}
 	.mySlides {
 		height: 45rem;
@@ -1063,5 +1063,11 @@ fieldset {
 	}
 	.history-img {
 		height: 45rem;
+	}
+	.description {
+		margin-top: 10rem;
+	}
+	.products__images h3 {
+		margin: 0;
 	}
 }
