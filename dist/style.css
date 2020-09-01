@@ -401,11 +401,10 @@ div {
 
 .touch-img {
 	position: absolute;
-	top: 25px;
+	top: 20px;
 	right: 25px;
-	font-size: 1.2rem;
-	color: rgba(0, 0, 0, 0.7);
-	opacity: 0.3;
+	font-size: 1.5rem;
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .card:hover .touch-img {
@@ -915,7 +914,13 @@ fieldset {
 		font-size: 4.5rem;
 	}
 	.touch-img {
-		display: none;
+		top: 300px;
+		right: -400px;
+		font-size: 4rem;
+		color: rgba(0, 0, 0, 0.2);
+	}
+	#card_mara .touch-img {
+		left: -400px;
 	}
 	.footer-contact {
 		font-size: 0.9rem;
