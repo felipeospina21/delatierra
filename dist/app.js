@@ -70,3 +70,66 @@ dropContainers.forEach(dropContainer => {
 		});
 	});
 });
+
+// Whatsapp shopping cart
+// http://api.whatsapp.com/send?phone=573054269112
+
+const buyBtn = document.getElementById('buy-ghee');
+
+buyBtn.addEventListener('click', () => {
+	const wspLink = document.getElementById('wsp-link');
+	wspLink.href =
+		'http://api.whatsapp.com/send?phone=573054269112&text=Hola,%20quiero%20comprar%20un%20ghee';
+});
+
+const gheeOptions = document.getElementById('ghee-options');
+const buyGheeBtn = document.getElementById('buy-ghee');
+
+let count = 0;
+
+const ghee315 = document.getElementById('g315').children;
+const ghee315Quant = document.querySelector('.quantity.g315');
+const ghee315Cost = document.querySelector('.cost.g315');
+
+const ghee160 = document.getElementById('g160').children;
+const ghee160Quant = document.querySelector('.quantity.g160');
+const ghee160Cost = document.querySelector('.cost.g160');
+
+// const mar400 = document.getElementById('m400').children
+// const mar200 = document.getElementById('m200').children
+// const almd400 = document.getElementById('a400').children
+// const almd200 = document.getElementById('a200').children
+
+// Display product selection
+buyGheeBtn.addEventListener('click', () => {
+	gheeOptions.classList.toggle('show');
+	ghee315Cost.innerHTML = '$24.500';
+	ghee160Cost.innerHTML = '$13.000';
+});
+
+// Add and remove Items
+function itemAddOrRemove(product, quantity, count = 0) {
+	const removeProductBtn = product[0];
+	const addProductBtn = product[2];
+
+	removeProductBtn.addEventListener('click', () => {
+		count--;
+		if (count < 0) {
+			count = 0;
+		} else {
+			quantity.textContent = count;
+		}
+	});
+
+	addProductBtn.addEventListener('click', () => {
+		count++;
+		quantity.textContent = count;
+	});
+}
+
+itemAddOrRemove(ghee315, ghee315Quant);
+itemAddOrRemove(ghee160, ghee160Quant);
+// itemAddOrRemove(mar400)
+// itemAddOrRemove(mar200)
+// itemAddOrRemove(almd400)
+// itemAddOrRemove(almd200)

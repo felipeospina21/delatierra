@@ -503,6 +503,83 @@ div {
 	text-decoration: underline;
 }
 
+.select-product {
+	display: none;
+	height: 15em;
+	width: 15em;
+	background-color: var(--clr-background);
+	position: absolute;
+	bottom: 100px;
+	left: 3em;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	opacity: 0.9;
+}
+
+.show {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+
+.prod-size {
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	padding: 1em 0;
+}
+
+.prod-size p {
+	margin: 0.5em auto;
+}
+
+.prod-size span {
+	margin: auto 1em;
+	width: 2em;
+}
+
+.cost {
+	margin: 0 1em;
+}
+.cost.g315 {
+	margin: 0 3em 1.5em 1em;
+}
+
+p .mod-quantity {
+	margin-left: 2em;
+}
+
+.fa-minus,
+.fa-plus {
+	font-size: 0.8rem;
+}
+.buy-prod-btn {
+	position: relative;
+	bottom: 30px;
+	left: 35%;
+	border-style: none;
+	border-color: transparent;
+	background-color: var(--clr-primary);
+	color: var(--clr-background);
+	height: 2rem;
+	width: 6rem;
+	font-size: 1rem;
+}
+
+.add-prod,
+.remove-prod {
+	border-style: none;
+}
+
+.add-to-cart {
+	padding: 0.5em;
+	margin: 1.5em 0.5em 0 0.5em;
+	border: solid 0.5px var(--clr-primary);
+	font-weight: 700;
+}
 /* Footer section */
 .footer {
 	display: grid;
