@@ -83,7 +83,9 @@ div {
 .nav-header {
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
+	justify-content: space-between;
+	align-items: center;
 }
 
 .nav-logo {
@@ -166,11 +168,27 @@ div {
 	width: 200px;
 }
 
+.cart-container {
+	/* border: 1px solid black; */
+	width: 10%;
+}
+
 .cart-logo {
 	font-size: 1.3rem;
 	z-index: 20;
 	color: var(--clr-secondary);
 	opacity: 0.7;
+}
+
+.items-in-cart {
+	/* border: 1px solid black ; */
+	/* display:flex;
+	justify-content: center; */
+	/* margin: 0 0 0.1em 0.3em; */
+	position: absolute;
+	z-index: 200;
+	right: 2.2em;
+	top: 1.6em;
 }
 
 /* Whatsapp Btn */
@@ -512,7 +530,7 @@ div {
 	bottom: 100px;
 	left: 3em;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-	opacity: 0.9;
+	opacity: 0.92;
 }
 
 .show {
@@ -574,10 +592,16 @@ p .mod-quantity {
 	border-style: none;
 }
 
+.add-prod:focus,
+.remove-prod:focus {
+	outline: none;
+}
+
 .add-to-cart {
 	padding: 0.5em;
 	margin: 1.5em 0.5em 0 0.5em;
 	border: solid 0.5px var(--clr-primary);
+	color: black;
 	font-weight: 700;
 }
 /* Footer section */
