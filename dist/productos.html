@@ -31,8 +31,8 @@
 				</div>
 
 				<div class="cart-container">
-					<div class="items-in-cart">0</div>
-					<a id="wsp-link" href="#" rel="noreferrer" target="_blank">
+					<div class="cart-count">0</div>
+					<a id="shopping-cart" href="#" rel="noreferrer">
 						<i class="fas fa-shopping-cart cart-logo"></i>
 					</a>
 				</div>
@@ -62,6 +62,27 @@
 	</header>
 
 	<main>
+		<div class="items-in-cart">
+			<div class="close-btn-container">
+				<button class="close-btn"><i class="fas fa-times"></i></button>
+			</div>
+			<div class="list-container">
+				<ul class="items-in-cart-list">
+				</ul>
+			</div>
+
+			<div class="cart-list-container">
+				<div class="total-container">
+					Total $<span class="total">0</span>
+				</div>
+				<a id="wsp-link" href="#" target="_blank">
+					<button class="checkout-btn">
+						Pedir por Whatsapp
+					</button>
+				</a>
+			</div>
+		</div>
+
 		<!-- whatsapp Btn -->
 		<div class="btn-container">
 			<a href="http://api.whatsapp.com/send?phone=573054269112" rel="noreferrer" target="_blank">
