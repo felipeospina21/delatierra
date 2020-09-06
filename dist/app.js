@@ -71,6 +71,16 @@ dropContainers.forEach(dropContainer => {
 	});
 });
 
+// Shopping cart Functionality
+const products = {
+	g315 : { name: 'Ghee 315gr', price: 24500, order: 0 },
+	g160 : { name: 'Ghee 160gr', price: 13000, order: 0 },
+	m400 : { name: 'C. Marañon 400gr', price: 46500, order: 0 },
+	m200 : { name: 'C. Marañon 200gr', price: 24000, order: 0 },
+	a400 : { name: 'C. Almendras 400gr', price: 40500, order: 0 },
+	a200 : { name: 'C. Almendras 200gr', price: 21000, order: 0 }
+};
+
 const gheeOptions = document.getElementById('ghee-options');
 const buyGheeBtn = document.getElementById('buy-ghee');
 const marOptions = document.getElementById('mar-options');
@@ -113,6 +123,13 @@ const [
 ] = prodsCost;
 
 // Display product selection and cart
+// const buyBtns = document.querySelectorAll('.buy-prod-btn')
+// 	buyBtns.forEach((btn)=>{
+// 		if (btn.id === 'buy-ghee'){
+
+// 		}
+// 	})
+
 buyGheeBtn.addEventListener('click', () => {
 	gheeOptions.classList.toggle('show');
 	ghee315Cost.innerHTML = '$24.500';
@@ -132,10 +149,10 @@ buyAlmdBtn.addEventListener('click', () => {
 });
 
 // Add and remove Items
-function itemAddOrRemove(product, quantity, count = 0) {
+function itemAddOrRemove(product, quantity) {
 	const removeProductBtn = product[0];
 	const addProductBtn = product[2];
-	// let itemsInCart = document.querySelector('.items-in-cart');
+	let count = Number(quantity.innerHTML);
 
 	removeProductBtn.addEventListener('click', () => {
 		count--;
@@ -143,14 +160,12 @@ function itemAddOrRemove(product, quantity, count = 0) {
 			count = 0;
 		} else {
 			quantity.textContent = count;
-			// itemsInCart.textContent = count;
 		}
 	});
 
 	addProductBtn.addEventListener('click', () => {
 		count++;
 		quantity.textContent = count;
-		// itemsInCart.textContent = count;
 	});
 }
 
@@ -162,15 +177,6 @@ itemAddOrRemove(almd400, almd400Quant);
 itemAddOrRemove(almd200, almd200Quant);
 
 // Add to cart
-const products = {
-	g315 : { name: 'Ghee 315gr', price: 24500, order: 0 },
-	g160 : { name: 'Ghee 160gr', price: 13000, order: 0 },
-	m400 : { name: 'C. Marañon 400gr', price: 46500, order: 0 },
-	m200 : { name: 'C. Marañon 200gr', price: 24000, order: 0 },
-	a400 : { name: 'C. Almendras 400gr', price: 40500, order: 0 },
-	a200 : { name: 'C. Almendras 200gr', price: 21000, order: 0 }
-};
-
 const cart = [];
 const addToCartBtn = document.querySelectorAll('.add-to-cart');
 
@@ -191,8 +197,6 @@ addToCartBtn.forEach(addBtn => {
 			if (g160Q > 0) {
 				cart.push([ g160Q, g160Name, g160Price * g160Q ]);
 			}
-
-			console.log(cart);
 			gheeOptions.classList.toggle('show');
 			// ghee315Quant.textContent = count
 			// ghee160Quant.textContent = count
@@ -231,31 +235,33 @@ addToCartBtn.forEach(addBtn => {
 
 			almdOptions.classList.toggle('show');
 		}
+
+		// add to cart
+		cart.forEach(element => {
+			const li = document.createElement('LI');
+			const itemText = document.createTextNode(
+				`${element[0]} x ${element[1]} = ${element[2]}`
+			);
+			li.appendChild(itemText);
+			itemsInCartList.appendChild(li);
+
+			total = total + element[2];
+			cartTotal.innerHTML = `${total}`;
+		});
+
+		cart.splice(0, 10);
+		itemsInCart.classList.toggle('show');
 	});
 });
 
 // Open and close cart div
 let total = 0;
 const closeCartBtn = document.querySelector('.close-btn');
+const itemsInCartList = document.querySelector('.items-in-cart-list');
+const cartTotal = document.querySelector('.total');
 
 shoppingCart.addEventListener('click', () => {
-	const itemsInCartList = document.querySelector('.items-in-cart-list');
-	const cartTotal = document.querySelector('.total');
-
 	itemsInCart.classList.toggle('show');
-	cart.forEach(element => {
-		const li = document.createElement('LI');
-		const itemText = document.createTextNode(
-			`${element[0]} x ${element[1]} = ${element[2]}`
-		);
-		li.appendChild(itemText);
-		itemsInCartList.appendChild(li);
-
-		total = total + element[2];
-		cartTotal.innerHTML = `${total}`;
-	});
-
-	cart.splice(0, 10);
 });
 
 closeCartBtn.addEventListener('click', () => {
