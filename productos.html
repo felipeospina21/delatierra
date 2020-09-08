@@ -29,7 +29,6 @@
 						<i class="fas fa-bars"></i>
 					</button>
 				</div>
-
 				<!-- links -->
 				<ul class="links">
 					<li>
@@ -44,19 +43,46 @@
 					<li>
 						<a href="contacto.html">Contacto</a>
 					</li>
-					<li>
-						<a href="http://api.whatsapp.com/send?phone=573054269112" rel="noreferrer" target="_blank">
-							<i class="fas fa-shopping-cart cart-logo"></i>
-						</a>
-					</li>
 				</ul>
 
+				<div class="cart-container">
+					<div class="cart-count"></div>
+					<a id="shopping-cart" href="#" rel="noreferrer">
+						<i class="fas fa-shopping-cart cart-logo"></i>
+					</a>
+				</div>
 
 			</div>
+
 		</div>
 	</header>
 
 	<main>
+		<!-- cart Div -->
+		<div class="items-in-cart">
+			<div class="close-btn-container">
+				<button class="close-btn cart-items"><i class="fas fa-times"></i></button>
+			</div>
+			<div class="list-container">
+				<ul class="items-in-cart-list">
+				</ul>
+			</div>
+
+			<div class="cart-list-container">
+				<div class="total-container">
+					Total (sin envío) $<span class="total">0</span>
+				</div>
+				<a id="wsp-link" href="#" target="_blank">
+					<button class="checkout-btn">
+						Pedir
+					</button>
+				</a>
+				<button class="clear-cart-btn">
+					Borrar
+				</button>
+			</div>
+		</div>
+
 		<!-- whatsapp Btn -->
 		<div class="btn-container">
 			<a href="http://api.whatsapp.com/send?phone=573054269112" rel="noreferrer" target="_blank">
@@ -74,6 +100,45 @@
 				<div class="products-wrapper">
 					<div class="image__container">
 						<img class="products__one" src="./images/prod-ghee-vert.jpg" alt="ghee">
+
+						<!-- Purchase Button -->
+						<div class="buy-btn-container">
+							<button class="buy-prod-btn" id="buy-ghee">
+								Comprar
+							</button>
+						</div>
+
+						<div class="select-product" id="ghee-options">
+							<div class="close-btn-container">
+								<button class="close-btn ghee"><i class="fas fa-times"></i></button>
+							</div>
+
+							<div class="prod-size">
+
+								<div class="mod-quantity">
+									Ghee 315gr
+									<span id="g315" class="prod">
+										<button class="remove-prod g315"><i class="fas fa-minus"></i></button>
+										<span class="quantity g315">0</span>
+										<button class="add-prod g315"><i class="fas fa-plus"></i></button>
+									</span>
+								</div>
+								<div class="cost g315"></div>
+
+								<div class="mod-quantity">
+									Ghee 160gr
+									<span id="g160" class="prod">
+										<button class="remove-prod g160"><i class="fas fa-minus"></i></button>
+										<span class="quantity g160">0</span>
+										<button class="add-prod g160"><i class="fas fa-plus"></i></button>
+									</span>
+								</div>
+								<div class="cost g160"></div>
+								<button class="add-to-cart ghee">Agregar</button>
+							</div>
+						</div>
+						<!-- End Purchase Button -->
+
 					</div>
 
 					<div class="drop-wrapper">
@@ -164,6 +229,45 @@
 				<div class="products-wrapper">
 					<div class="image__container">
 						<img class="products__two" src="./images/prod-mar-vert.jpg" alt="marañon">
+
+						<!-- Purchase Button -->
+						<div class="buy-btn-container">
+							<button class="buy-prod-btn" id="buy-mar">
+								Comprar
+							</button>
+						</div>
+
+						<div class="select-product" id="mar-options">
+							<div class="close-btn-container">
+								<button class="close-btn mar"><i class="fas fa-times"></i></button>
+							</div>
+
+							<div class="prod-size">
+
+								<div class="mod-quantity">
+									Marañón 400gr
+									<span id="m400" class="prod">
+										<button class="remove-prod m400"><i class="fas fa-minus"></i></button>
+										<span class="quantity m400">0</span>
+										<button class="add-prod m400"><i class="fas fa-plus"></i></button>
+									</span>
+								</div>
+								<div class="cost m400"></div>
+
+								<div class="mod-quantity">
+									Marañón 200gr
+									<span id="m200" class="prod">
+										<button class="remove-prod m200"><i class="fas fa-minus"></i></button>
+										<span class="quantity m200">0</span>
+										<button class="add-prod m200"><i class="fas fa-plus"></i></button>
+									</span>
+								</div>
+								<div class="cost m200"></div>
+								<button class="add-to-cart mar">Agregar</button>
+							</div>
+						</div>
+						<!-- End Purchase Button -->
+
 					</div>
 
 					<div class="drop-wrapper">
@@ -246,6 +350,45 @@
 				<div class="products-wrapper">
 					<div class="image__container">
 						<img class="products__three" src="./images/prod-almd-vert.jpg" alt="almendra">
+
+						<!-- Purchase Button -->
+						<div class="buy-btn-container">
+							<button class="buy-prod-btn" id="buy-almd">
+								Comprar
+							</button>
+						</div>
+
+						<div class="select-product" id="almd-options">
+							<div class="close-btn-container">
+								<button class="close-btn almd"><i class="fas fa-times"></i></button>
+							</div>
+
+							<div class="prod-size">
+
+								<div class="mod-quantity">
+									Almendras 400gr
+									<span id="a400" class="prod">
+										<button class="remove-prod a400"><i class="fas fa-minus"></i></button>
+										<span class="quantity a400">0</span>
+										<button class="add-prod a400"><i class="fas fa-plus"></i></button>
+									</span>
+								</div>
+								<div class="cost a400"></div>
+
+								<div class="mod-quantity">
+									Almendras 200gr
+									<span id="a200" class="prod">
+										<button class="remove-prod a200"><i class="fas fa-minus"></i></button>
+										<span class="quantity a200">0</span>
+										<button class="add-prod a200"><i class="fas fa-plus"></i></button>
+									</span>
+								</div>
+								<div class="cost a200"></div>
+								<button class="add-to-cart almd">Agregar</button>
+							</div>
+						</div>
+						<!-- End Purchase Button -->
+
 					</div>
 
 					<div class="drop-wrapper">
@@ -347,6 +490,8 @@
 		<div class="created-by">Creado por Felipe Ospina</div>
 	</footer>
 	<script src="app.js"></script>
+	<script src="cart.js"></script>
+
 </body>
 
 </html>
