@@ -127,7 +127,7 @@ div {
 
 .show-links {
 	padding: 0.5rem 0;
-	height: 10.5rem;
+	height: 11rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -570,13 +570,13 @@ div {
 
 .select-product {
 	bottom: 50px;
-	left: 25%;
+	left: 20%;
 }
 
 .show {
 	margin: auto;
 	display: block;
-	overflow: scroll;
+	overflow: auto;
 }
 
 .cart-list-container {
@@ -611,10 +611,12 @@ div {
 }
 
 .cost {
-	margin: 0 1em;
+	margin: 0 0.5em;
 }
-.cost.g315 {
-	margin: 0 3em 1.5em 1em;
+
+.cost.g315,
+.cost.g160 {
+	margin-left: 2rem;
 }
 
 p .mod-quantity {
@@ -693,6 +695,7 @@ p .mod-quantity {
 .add-prod,
 .remove-prod {
 	border-style: none;
+	background-color: transparent;
 }
 
 .add-prod:focus,
@@ -706,6 +709,7 @@ p .mod-quantity {
 	border: solid 0.5px var(--clr-primary);
 	color: black;
 	font-weight: 700;
+	background-color: transparent;
 }
 /* Footer section */
 .footer {
@@ -1185,6 +1189,16 @@ fieldset {
 	}
 	.history-img {
 		height: 38rem;
+	}
+	.select-product {
+		width: 17em;
+	}
+	.cost {
+		margin-left: 1.5em;
+	}
+	.cost.g315,
+	.cost.g160 {
+		margin-left: 3em;
 	}
 }
 
