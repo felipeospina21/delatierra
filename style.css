@@ -533,7 +533,7 @@ div {
 .items-in-cart {
 	display: none;
 	height: 15em;
-	width: 15em;
+	width: 17em;
 	background-color: var(--clr-background);
 	position: absolute;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
