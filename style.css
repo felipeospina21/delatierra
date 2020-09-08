@@ -127,7 +127,7 @@ div {
 
 .show-links {
 	padding: 0.5rem 0;
-	height: 10.5rem;
+	height: 11rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -695,6 +695,7 @@ p .mod-quantity {
 .add-prod,
 .remove-prod {
 	border-style: none;
+	background-color: transparent;
 }
 
 .add-prod:focus,
@@ -708,6 +709,7 @@ p .mod-quantity {
 	border: solid 0.5px var(--clr-primary);
 	color: black;
 	font-weight: 700;
+	background-color: transparent;
 }
 /* Footer section */
 .footer {
