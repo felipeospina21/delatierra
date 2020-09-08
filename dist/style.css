@@ -83,7 +83,7 @@ div {
 .nav-header {
 	width: 100%;
 	display: flex;
-	/* flex-wrap: wrap; */
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -127,7 +127,7 @@ div {
 
 .show-links {
 	padding: 0.5rem 0;
-	height: 13.5rem;
+	height: 10.5rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -151,7 +151,7 @@ div {
 	background: transparent;
 	border-color: transparent;
 	cursor: pointer;
-	margin: 0.5rem auto 0 auto;
+	margin: 0.5rem auto 0 1em;
 }
 
 .nav-toggle:focus,
@@ -169,8 +169,14 @@ div {
 }
 
 .cart-container {
-	/* border: 1px solid black; */
 	width: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 24px;
+	right: 0.5em;
 }
 
 .cart-logo {
@@ -181,14 +187,16 @@ div {
 }
 
 .cart-count {
-	/* border: 1px solid black ; */
-	/* display:flex;
-	justify-content: center; */
-	/* margin: 0 0 0.1em 0.3em; */
-	position: absolute;
-	z-index: 200;
-	right: 2.2em;
-	top: 1em;
+	background-color: transparent;
+	opacity: 0.7;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	margin: 0.2em auto;
+}
+
+.show-count {
+	background-color: var(--clr-primary);
 }
 
 /* Whatsapp Btn */
@@ -536,10 +544,9 @@ div {
 	/* height: 0px; */
 	right: 0;
 	top: 2.5em;
-	width: 50%;
+	width: 70%;
 	max-width: 400px;
 	border: 1px solid;
-
 	height: 90%;
 	z-index: 300;
 }
@@ -554,6 +561,7 @@ div {
 	justify-self: center;
 	align-self: center;
 	margin: 0.5em auto;
+	/* font-size: 1rem; */
 }
 
 .total-container {
@@ -561,8 +569,8 @@ div {
 }
 
 .select-product {
-	bottom: 100px;
-	left: 3em;
+	bottom: 50px;
+	left: 25%;
 }
 
 .show {
@@ -575,7 +583,7 @@ div {
 	position: sticky;
 	bottom: 0;
 	right: 0;
-	margin: auto;
+	margin: 0.5em auto 0 auto;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -590,7 +598,7 @@ div {
 	flex-direction: column;
 	justify-content: center;
 	margin: auto;
-	padding: 1em 0;
+	padding: 0 0 1em 0;
 }
 
 .prod-size p {
@@ -617,6 +625,17 @@ p .mod-quantity {
 .fa-plus {
 	font-size: 0.8rem;
 }
+.buy-btn-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	/* border: 1px solid; */
+}
+
+.buy-btn-container #buy-ghee {
+	position: absolute;
+	bottom: 2px;
+}
 
 .buy-prod-btn,
 .checkout-btn {
@@ -624,6 +643,15 @@ p .mod-quantity {
 	border-color: transparent;
 	background-color: var(--clr-primary);
 	color: var(--clr-background);
+}
+
+.clear-cart-btn {
+	width: 5rem;
+	height: 1.3rem;
+	background-color: var(--clr-background);
+	color: var(--clr-primary);
+	border: 1px solid var(--clr-primary);
+	margin-top: 0.5em;
 }
 
 .checkout-btn {
@@ -634,12 +662,12 @@ p .mod-quantity {
 }
 
 .buy-prod-btn {
-	position: relative;
-	bottom: 30px;
-	left: 35%;
 	height: 2rem;
 	width: 6rem;
 	font-size: 1rem;
+	justify-self: center;
+	align-self: center;
+	margin: auto;
 }
 
 .close-btn-container {
@@ -651,6 +679,8 @@ p .mod-quantity {
 	top: 0;
 	z-index: 300;
 	background-color: var(--clr-background);
+	display: flex;
+	align-items: center;
 }
 .close-btn {
 	border: none;
@@ -658,10 +688,6 @@ p .mod-quantity {
 	font-size: 1.2rem;
 	position: absolute;
 	right: 15px;
-
-	/* width: 100%; */
-	/* margin-left: 90%	; */
-	/* left:0px; */
 }
 
 .add-prod,
@@ -1063,6 +1089,11 @@ fieldset {
 	.nav-toggle-container {
 		width: 1px;
 		overflow: hidden;
+	}
+	.cart-container {
+		position: relative;
+		top: -7px;
+		right: 0;
 	}
 	.links {
 		/* IMPORTANT TO ADD */

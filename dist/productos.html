@@ -29,14 +29,6 @@
 						<i class="fas fa-bars"></i>
 					</button>
 				</div>
-
-				<div class="cart-container">
-					<!-- <div class="cart-count">0</div> -->
-					<a id="shopping-cart" href="#" rel="noreferrer">
-						<i class="fas fa-shopping-cart cart-logo"></i>
-					</a>
-				</div>
-
 				<!-- links -->
 				<ul class="links">
 					<li>
@@ -51,20 +43,25 @@
 					<li>
 						<a href="contacto.html">Contacto</a>
 					</li>
-					<li>
-
-					</li>
 				</ul>
 
+				<div class="cart-container">
+					<div class="cart-count"></div>
+					<a id="shopping-cart" href="#" rel="noreferrer">
+						<i class="fas fa-shopping-cart cart-logo"></i>
+					</a>
+				</div>
 
 			</div>
+
 		</div>
 	</header>
 
 	<main>
+		<!-- cart Div -->
 		<div class="items-in-cart">
 			<div class="close-btn-container">
-				<button class="close-btn"><i class="fas fa-times"></i></button>
+				<button class="close-btn cart-items"><i class="fas fa-times"></i></button>
 			</div>
 			<div class="list-container">
 				<ul class="items-in-cart-list">
@@ -73,13 +70,16 @@
 
 			<div class="cart-list-container">
 				<div class="total-container">
-					Total $<span class="total">0</span>
+					Total (sin envío) $<span class="total">0</span>
 				</div>
 				<a id="wsp-link" href="#" target="_blank">
 					<button class="checkout-btn">
-						Pedir por Whatsapp
+						Pedir
 					</button>
 				</a>
+				<button class="clear-cart-btn">
+					Borrar
+				</button>
 			</div>
 		</div>
 
@@ -102,11 +102,17 @@
 						<img class="products__one" src="./images/prod-ghee-vert.jpg" alt="ghee">
 
 						<!-- Purchase Button -->
-						<button class="buy-prod-btn" id="buy-ghee">
-							Comprar
-						</button>
+						<div class="buy-btn-container">
+							<button class="buy-prod-btn" id="buy-ghee">
+								Comprar
+							</button>
+						</div>
 
 						<div class="select-product" id="ghee-options">
+							<div class="close-btn-container">
+								<button class="close-btn ghee"><i class="fas fa-times"></i></button>
+							</div>
+
 							<div class="prod-size">
 
 								<div class="mod-quantity">
@@ -225,11 +231,17 @@
 						<img class="products__two" src="./images/prod-mar-vert.jpg" alt="marañon">
 
 						<!-- Purchase Button -->
-						<button class="buy-prod-btn" id="buy-mar">
-							Comprar
-						</button>
+						<div class="buy-btn-container">
+							<button class="buy-prod-btn" id="buy-mar">
+								Comprar
+							</button>
+						</div>
 
 						<div class="select-product" id="mar-options">
+							<div class="close-btn-container">
+								<button class="close-btn mar"><i class="fas fa-times"></i></button>
+							</div>
+
 							<div class="prod-size">
 
 								<div class="mod-quantity">
@@ -340,11 +352,17 @@
 						<img class="products__three" src="./images/prod-almd-vert.jpg" alt="almendra">
 
 						<!-- Purchase Button -->
-						<button class="buy-prod-btn" id="buy-almd">
-							Comprar
-						</button>
+						<div class="buy-btn-container">
+							<button class="buy-prod-btn" id="buy-almd">
+								Comprar
+							</button>
+						</div>
 
 						<div class="select-product" id="almd-options">
+							<div class="close-btn-container">
+								<button class="close-btn almd"><i class="fas fa-times"></i></button>
+							</div>
+
 							<div class="prod-size">
 
 								<div class="mod-quantity">
@@ -472,6 +490,8 @@
 		<div class="created-by">Creado por Felipe Ospina</div>
 	</footer>
 	<script src="app.js"></script>
+	<script src="cart.js"></script>
+
 </body>
 
 </html>
