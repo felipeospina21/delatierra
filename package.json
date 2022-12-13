@@ -19,7 +19,7 @@
 	"dependencies": {
 		"@admin-bro/express": "^3.0.0",
 		"@admin-bro/mongoose": "^1.0.0",
-		"admin-bro": "^3.2.0",
+		"admin-bro": "^3.4.0",
 		"express": "^4.17.3",
 		"express-formidable": "^1.2.0",
 		"express-session": "^1.17.1",
